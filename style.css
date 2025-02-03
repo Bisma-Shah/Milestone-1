@@ -1,0 +1,168 @@
+body {
+  background-color: #d5d5d5;
+  font-family: system-ui;
+}
+
+.container {
+  background-color: #e9e7e5;
+  width: 1000px;
+  max-width: 100%;
+  margin: auto;
+  padding: 50px;
+  box-shadow: 0px 10px 50px #858585;
+  display: grid;
+  grid-template-columns: 35% 60%;
+  column-gap: 5%;
+  row-gap: 30px;
+}
+
+.avatar img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.avatar {
+  display: flex;
+  justify-content: end;
+}
+
+.name {
+  padding-left: 30px;
+  border-left: 1px solid black;
+}
+
+.name h1 {
+  font-weight: 300;
+  font-size: xxx-large;
+  margin: 0 0 5px;
+}
+
+.name .specialize {
+  margin: 0;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.name .contact {
+  padding: 0;
+  list-style: none;
+}
+
+.name .contact span {
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: small;
+  margin-right: 20px;
+}
+
+.name .contact li {
+  padding: 5px 0;
+  transform: translate(-40px);
+  background-color: #e9e7e5;
+}
+
+.info ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: right;
+  line-height: 30px;
+}
+
+.intro {
+  padding-left: 30px;
+  border-left: 1px solid #000;
+  text-align: justify;
+}
+
+h2 {
+  padding: 0;
+  margin: 0 0 20px;
+}
+
+.exp {
+  text-align: right;
+}
+
+.exp h4 {
+  margin: 20px 0 10px;
+}
+
+.exp .education {
+  margin-top: 20px;
+}
+
+.skills {
+  margin-top: 50px;
+}
+
+.skills ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  line-height: 35px;
+}
+
+.toggle-btn {
+  margin-top: 10px;
+  padding: 7px;
+  background: #000;
+  color: white;
+  font-weight: bold;
+}
+
+.project {
+  padding-left: 30px;
+  text-align: justify;
+  border-left: 1px solid #000;
+}
+
+.project .web {
+  color: green;
+  padding: 10px 0;
+}
+
+.project .location {
+  font-weight: 500;
+  padding: 10px 0;
+}
+
+.project .item {
+  position: relative;
+}
+
+.project .item::before {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  background-color: #000;
+  content: "";
+  border-radius: 50%;
+  left: -37px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .avatar {
+    justify-content: center;
+  }
+
+  .name,
+  .info,
+  .intro,
+  .exp,
+  .project {
+    text-align: center;
+  }
+}
